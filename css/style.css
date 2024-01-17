@@ -47,12 +47,32 @@ article ul li:last-child {
     height: 600px;
 }
 
+
+@media (max-width: 800px) {
+    .sec1,
+    .sec1 img {
+        height: 400px;
+    }
+}
+
 .sec3 {
     height: 400px;
     background-image: url("../img/syria.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+    .sec10 {
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+    .sec4 {
+        display: none;
+    }
 }
 
 .sec5 div div .card::after {
@@ -98,7 +118,8 @@ article ul li:last-child {
     width: 30%;
     background-image: url("../img/box1.jpg");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    transition: 0.5s;
 }
 
 .sec6 .div1:hover .img {
@@ -115,7 +136,30 @@ article ul li:last-child {
     width: 30%;
     background-image: url("../img/box2.jpg");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    transition: 0.5s;
+}
+
+@media (max-width: 800px) {
+    .sec6 .div1 .img,
+    .sec6 .div2 .img {
+        display: none;
+    }
+    .sec6 .div1 .text {
+        width: 100%;
+        transform: skewX(0deg);
+        text-align: center;
+        left: 0;
+    }
+    .sec6 .div2 {
+        display: block !important;
+    }
+    .sec6 .div2 .text {
+        width: 100%;
+        transform: skewX(0deg);
+        text-align: center;
+        right: 0;
+    }
 }
 
 .sec6 .div2:hover .img {
@@ -135,6 +179,7 @@ article ul li:last-child {
     background-image: url("../img/card1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
 .sec8 .parent .card1:hover {
@@ -158,6 +203,7 @@ article ul li:last-child {
     background-image: url("../img/card2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
 .sec8 .parent .card2:hover {
