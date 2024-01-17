@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syria</title>
+    <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Css Fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3">
+            <div class="container-fluid div1">
+                <img src="img/logo.png" alt="">
+                <a class="navbar-brand fw-bold text-uppercase fs-2" href="#">Syria</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bottom" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bottom">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Citys
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fs-5" href="#">Damascus</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Aleppo</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Lattakia</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item fs-5" href="#">Hama</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Homs</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Daraa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" aria-current="page" href="#">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" aria-current="page" href="#">About-Citys</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success me-1" type="submit">Search</button>
+                        <!-- Button Login -->
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Login
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h1 class="modal-title fs-5 text-uppercase mx-auto text-white" id="exampleModalLabel">log in</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold fs-4">Enter Your Name :</label>
+                            <input type="text" class="form-control" placeholder="enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold fs-4">Enter Your Password :</label>
+                            <input type="password" class="form-control" placeholder="enter your password">
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-light text-dark" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="btn btn-light text-dark">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="position-fixed z-3">
+        <ul class="p-0 m-0 text-center">
+            <li class="rounded-circle">
+                <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li class="mt-2 mb-2 rounded-circle">
+                <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li class="rounded-circle">
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+        </ul>
+    </article>
+
+    <section class="sec1 mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/image1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-75 w-50 m-auto rounded-pill">
+                        <h5 class="fw-bold fs-1">Damascus</h5>
+                        <p class="fs-3">It is the capital of the Syrian Arab Republic</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-75 w-50 m-auto rounded-pill">
+                        <h5 class="fw-bold fs-1">Aleppo</h5>
+                        <p class="fs-3">It is a Syrian governorate</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-75 w-50 m-auto rounded-pill">
+                        <h5 class="fw-bold fs-1">Lattakia</h5>
+                        <p class="fs-3">It is a Syrian governorate</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-75 w-50 m-auto rounded-pill">
+                        <h5 class="fw-bold fs-1">Hama</h5>
+                        <p class="fs-3">It is a Syrian governorate</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-75 w-50 m-auto rounded-pill">
+                        <h5 class="fw-bold fs-1">Homs</h5>
+                        <p class="fs-3">It is a Syrian governorate</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-75 w-50 m-auto rounded-pill">
+                        <h5 class="fw-bold fs-1">Daraa</h5>
+                        <p class="fs-3">It is a Syrian governorate</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="sec2 container">
+        <h2 class="text-center mb-3 text-uppercase fw-bold">citys</h2>
+        <div class="row justify-content-center align-items-center gap-5 mb-3">
+            <div class="col-md-3 col-sm-4 col-12 text-center">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/box1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Damascus</h5>
+                        <p class="card-text">Situated in southwestern Syria.</p>
+                    </div>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Know More
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body border-0 pt-0 pe-0 ps-0 pb-2 fw-bold">
+                            More Information About Damascus
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12 text-center">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/box2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aleppo</h5>
+                        <p class="card-text">Situated in northern Syria.</p>
+                    </div>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Know More
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body border-0 pt-0 pe-0 ps-0 pb-2 fw-bold">
+                            More Information About Aleppo
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12 text-center">
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="img/box3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lattakia</h5>
+                        <p class="card-text">Situated in western Syria.</p>
+                    </div>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Know More
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body border-0 pt-0 pe-0 ps-0 pb-2 fw-bold">
+                            More Information About Lattakia
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center gap-5 mb-5">
+            <div class="col-md-3 col-sm-4 col-12 text-center">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/box4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hama</h5>
+                        <p class="card-text">It is located 213 km (132 mi) north of Damascus and 46 kilometres (29 mi) north of Homs.</p>
+                    </div>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Know More
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body border-0 pt-0 pe-0 ps-0 pb-2 fw-bold">
+                            More Information About Hama
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12 text-center">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/box5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Homs</h5>
+                        <p class="card-text">Homs is located 162 kilometres (101 mi) north of Damascus, 193 kilometres (120 mi) south of Aleppo.</p>
+                    </div>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Know More
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body border-0 pt-0 pe-0 ps-0 pb-2 fw-bold">
+                            More Information About Homs
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12 text-center">
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="img/box6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Daraa</h5>
+                        <p class="card-text">Daraa is a city in southwestern Syria, located about 13 kilometres (8.1 mi) north of the border with Jordan.</p>
+                    </div>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Know More
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body border-0 pt-0 pe-0 ps-0 pb-2 fw-bold">
+                            More Information About Daraa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3 mb-5"></section>
+    <section class="sec4 text-center bg-dark lh-lg p-5 mb-5">
+        <h2 class="fw-bold text-light">Welcom to the History of Syria</h2>
+        <p class="text-light">The name "Syria" historically referred to a wider region, broadly synonymous with the Levant, and known in Arabic as al-Sham. The modern state encompasses the sites of several ancient kingdoms and empires, including the Eblan civilization of the 3rd millennium BC. In the Islamic era, Damascus was the seat of the Umayyad Caliphate and a provincial capital of the Mamluk Sultanate in Egypt. The modern Syrian state was established in the mid-20th century after centuries of Ottoman rule. After a period as a French mandate (1923–1946), the newly created state represented the largest Arab state to emerge from the formerly Ottoman-ruled Syrian provinces. It gained de jure independence as a democratic parliamentary republic on 24 October 1945 when the Republic of Syria became a founding member of the United Nations, an act which legally ended the former French mandate (although French troops did not leave the country until April 1946).</p>
+    </section>
+    <section class="sec5 container">
+        <h2 class="text-center mb-3 text-uppercase fw-bold">About-Citys</h2>
+        <div class="row justify-content-center align-items-center gap-5 mb-3">
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Damascus</h5>
+                            <p class="fw-bold">capital of the Syria</p>
+                        </div>
+                        <a href="#" class="btn btn-primary text-center w-100 position-relative z-1">Other places in Damascus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/img2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Aleppo</h5>
+                            <p class="fw-bold">Syrian governorate</p>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 position-relative z-1">Other places in Aleppo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Lattakia</h5>
+                            <p class="fw-bold">Syrian governorate</p>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 position-relative z-1">Other places in Lattakia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center gap-5 mb-3">
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Hama</h5>
+                            <p class="fw-bold">Syrian governorate</p>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 position-relative z-1">Other places in Hama</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/img2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Homs</h5>
+                            <p class="fw-bold">Syrian governorate</p>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 position-relative z-1">Other places in Homs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="img/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Daraa</h5>
+                            <p class="fw-bold">Syrian governorate</p>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 position-relative z-1">Other places in Daraa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec6 mt-5">
+        <h2 class="fw-bold text-uppercase text-center mb-3">most famous cities</h2>
+        <div class="div1 position-relative overflow-hidden shadow-lg mb-3">
+            <div class="text h-100 position-relative z-1 bg-white p-2">
+                <p class="fw-bold fs-1 text-center">Damascus</p>
+                <p>Founded in the 3rd millennium B.C., Damascus was an important cultural and commercial centre, by virtue of its geographical position at the crossroads of the orient and the occident, between Africa and Asia. The old city of Damascus is considered to be among the oldest continually inhabited cities in the world.</p>
+                <div class="accordion" id="accordionExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne1">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                Other Famous Places
+                            </button>
+                        </h2>
+                        <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Al Azem Palace</li>
+                                    <li>The National Museum of Damascus</li>
+                                    <li>Saladin (Selahedîn) Mausoleum</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img position-absolute top-0 end-0 h-100 d-sm-none d-md-block"></div>
+        </div>
+        <div class="div2 d-flex flex-row-reverse overflow-hidden shadow-lg mb-3">
+            <div class="text position-relative z-1 bg-white p-2">
+                <p class="fw-bold fs-1 text-center">Aleppo</p>
+                <p>Aleppo is one of the oldest continuously inhabited cities in the world; it may have been inhabited since the sixth millennium BCE.[12] Excavations at Tell as-Sawda and Tell al-Ansari, just south of the old city of Aleppo, show that the area was occupied by Amorites by the latter part of the third millennium BCE</p>
+                <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Other Famous Places
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Aleppo Town Centre</li>
+                                    <li>Saint Simon Citadel (Sam’an Citadel, Qalat Samaan)</li>
+                                    <li>Dead City of Serjilla</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img d-sm-none d-md-block"></div>
+        </div>
+    </section>
+    <section class="sec7 mt-5 mb-5"></section>
+    <section class="sec8 container mb-5">
+        <div class="row justify-content-center align-content-center parent gap-5">
+            <div class="col-md-4 col-12 card1 position-relative">
+                <div class="content position-relative z-2">
+                    <p class="fw-bold fs-2 text-white">Damascus</p>
+                    <p class="fw-bold text-white">Founded in the 3rd millennium B.C.</p>
+                </div>
+                <div class="position-absolute bottom-0 z-2">
+                    <img class="w-50 h-50 rounded-circle" src="img/box1.jpg" alt="">
+                    <p class="fw-bold text-white">Umayyad mosque in Damascus</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 card2 position-relative">
+                <div class="content position-relative z-2">
+                    <p class="fw-bold fs-2 text-white">Aleppo</p>
+                    <p class="fw-bold text-white">Founded in the 1rd millennium B.C.</p>
+                </div>
+                <div class="position-absolute bottom-0 z-2">
+                    <img class="w-50 h-50 rounded-circle" src="img/aleppo.jpg" alt="">
+                    <p class="fw-bold text-white">Umayyad mosque in Aleppo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec9">
+        <div class="parent bg-dark p-5 row justify-content-around align-content-center">
+            <div class="content col-md-4 col-sm-12">
+                <div class="div1 d-flex justify-content-center align-items-center">
+                    <img src="img/logo.png" alt="" width="100" height="100">
+                    <p class="text-white">Syria-Team</p>
+                </div>
+                <hr class="text-white">
+                <div class="div2 text-white lh-lg d-flex flex-column align-items-center">
+                    <p>
+                        Tel : +9633765820
+                    </p>
+                    <p>
+                        Address : Syria-Damscus
+                    </p>
+                    <p>
+                        Fax :  000-000-000
+                    </p>
+                </div>
+            </div>
+            <div class="icons col-md-4 col-sm-12">
+                <div class="links row">
+                    <div class=" col-md-3 p-3 col-sm-12 link1 text-center">
+                        <p class="fw-bold fs-3 text-white">Instgram</p>
+                        <i class="fa-brands fa-instagram"></i>
+                        <p class="fw-bold fs-6 text-white">Go to link</p>
+                    </div>
+                    <div class=" col-md-5 p-3 col-sm-12 link2 text-center">
+                        <p class="fw-bold fs-3 text-white">Facebook</p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <p class="fw-bold fs-6 text-white">Go to link</p>
+                    </div>
+                    <div class=" col-md-4 p-3 col-sm-12 link3 text-center">
+                        <p class="fw-bold fs-3 text-white">Twitter</p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <p class="fw-bold fs-6 text-white">Go to link</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- popper js file -->
+    <script src="js/popper.min.js"></script>
+    <!-- jquery js file -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrao js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Js Fontawsome -->
+    <script src="js/all.min.js"></script>
+</body>
+</html>
